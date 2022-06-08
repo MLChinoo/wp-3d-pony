@@ -24,7 +24,7 @@ class WP_3D_Pony{
 		if('POST' == $_SERVER['REQUEST_METHOD']){
 			update_option('wp_3d_pony', array(
 			'firstLoad'=>true,
-			'texture'=>esc_attr($_POST['texture']),
+			'jsonpath'=>esc_attr($_POST['jsonpath']),
 			'position'=>esc_attr($_POST['position']),
 			'width'=>floatval($_POST['width']),
 			'height'=>floatval($_POST['height']),
@@ -49,12 +49,9 @@ class WP_3D_Pony{
 	public function firstLoad(){
 		if($this->options['firstLoad']!=true){
 			if(!file_exists(wp_upload_dir()['basedir'].'/wp-3d-pony'))mkdir(wp_upload_dir()['basedir'].'/wp-3d-pony');
-			copy(plugin_dir_path(__FILE__).'source/derpy.png',wp_upload_dir()['basedir'].'/wp-3d-pony/derpy.png');
-			copy(plugin_dir_path(__FILE__).'source/rd.png',wp_upload_dir()['basedir'].'/wp-3d-pony/rd.png');
-			copy(plugin_dir_path(__FILE__).'source/Pony.moc',wp_upload_dir()['basedir'].'/wp-3d-pony/Pony.moc');
 			update_option('wp_3d_pony', array(
 			'firstLoad'=>true,
-			'texture'=>'rd.png',
+			'jsonpath'=>'https://gitee.com/MLChinoo/live2D/raw/master/chino/model.json',
 			'position'=>'right',
 			'width'=>80,
 			'height'=>160,
@@ -71,16 +68,6 @@ class WP_3D_Pony{
 		}
 	}
 	public function ponyModel(){
-		?>
-		{
-	"type": "Live2D Model Setting",
-	"name": "Pony",
-	"model": "<?php echo $this->assetUrl.'Pony.moc' ?>",
-	"textures": [
-		"<?php echo $this->assetUrl.$this->options['texture'] ?>"
-	]
-}
-		<?php
 		exit;
 	}
 	public function head(){
@@ -89,7 +76,7 @@ class WP_3D_Pony{
 		<script>
 			L2Dwidget.init({
 				"model": {
-					"jsonPath": "<?php echo home_url().'/?ponymodel=1' ?>",
+					"jsonPath": "<?php echo $this->options['jsonpath'] ?>",
 					"scale": <?php echo $this->options['scale'] ?>
 				},
 				"display": {

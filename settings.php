@@ -8,8 +8,8 @@
 					<option <?php echo ($this->options['activation'])?'':'selected="selected"' ?> value="0">Disabled</option>
 				</select>
 			</td></tr>
-			<tr><td>Texture Path: </td><td>
-				<?php echo ABSPATH.$this->assetUrl ?><input type="text" name="texture" id="texture" value="<?php echo $this->options['texture'] ?>" />
+			<tr><td>jsonPath: </td><td>
+				<?php echo ABSPATH.$this->assetUrl ?><input type="text" name="jsonpath" id="jsonpath" value="<?php echo $this->options['jsonpath'] ?>" />
 			</td></tr>
 			<tr><td>Position: </td><td>
 				<select name="position">
