@@ -1,11 +1,11 @@
 <?php
 /*
 Plugin Name: WP 3D Pony
-Plugin URI: https://github.com/juzeon/wp-3d-pony/
-Description: 3D MLP:FiM pony based on live2dw and Frash's model.
-Version: 1.1
-Author: juzeon
-Author URI: https://github.com/juzeon/
+Plugin URI: https://github.com/MLChinoo/wp-3d-pony
+Description: 3D MLP:FiM pony based on live2dw and Frash's model, forked by MLChinoo.
+Version: 1.1.4514
+Author: MLChinoo
+Author URI: https://github.com/MLChinoo
 */
 class WP_3D_Pony{
 	public $options;
