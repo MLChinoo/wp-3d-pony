@@ -51,6 +51,6 @@
 		<input type="submit" class="button-primary" value="OK"/><br />
 	</form>
 	<br /><br /><br />
-	Developed by <a href="https://github.com/juzeon/" target="_blank">@juzeon</a>. Details for this plugin: <a href="https://github.com/juzeon/wp-3d-pony" target="_blank">https://github.com/juzeon/wp-3d-pony</a>
+	Developed by <a href="https://github.com/juzeon/" target="_blank">@juzeon</a>. Details for this plugin: <a href="https://github.com/juzeon/wp-3d-pony" target="_blank">https://github.com/juzeon/wp-3d-pony</a><br/>
 	Forked by <a href="https://github.com/MLChinoo/" target="_blank">@MLChinoo</a>. Forked Repository: <a href="https://github.com/MLChinoo/wp-3d-pony" target="_blank">https://github.com/juzeon/wp-3d-pony</a>
 </div>
