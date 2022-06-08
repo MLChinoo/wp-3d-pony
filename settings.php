@@ -9,7 +9,7 @@
 				</select>
 			</td></tr>
 			<tr><td>jsonPath: </td><td>
-				<?php echo ABSPATH.$this->assetUrl ?><input type="text" name="jsonpath" id="jsonpath" value="<?php echo $this->options['jsonpath'] ?>" />
+				<input type="text" name="jsonpath" id="jsonpath" value="<?php echo $this->options['jsonpath'] ?>" />
 			</td></tr>
 			<tr><td>Position: </td><td>
 				<select name="position">
@@ -52,4 +52,5 @@
 	</form>
 	<br /><br /><br />
 	Developed by <a href="https://github.com/juzeon/" target="_blank">@juzeon</a>. Details for this plugin: <a href="https://github.com/juzeon/wp-3d-pony" target="_blank">https://github.com/juzeon/wp-3d-pony</a>
+	Forked by <a href="https://github.com/MLChinoo/" target="_blank">@MLChinoo</a>. Forked Repository: <a href="https://github.com/MLChinoo/wp-3d-pony" target="_blank">https://github.com/juzeon/wp-3d-pony</a>
 </div>
