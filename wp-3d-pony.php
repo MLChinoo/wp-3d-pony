@@ -51,16 +51,16 @@ class WP_3D_Pony{
 			if(!file_exists(wp_upload_dir()['basedir'].'/wp-3d-pony'))mkdir(wp_upload_dir()['basedir'].'/wp-3d-pony');
 			update_option('wp_3d_pony', array(
 			'firstLoad'=>true,
-			'jsonpath'=>'https://gitee.com/MLChinoo/live2D/raw/master/chino/model.json',
-			'position'=>'right',
-			'width'=>80,
-			'height'=>160,
+			'jsonpath'=>'https://cdn.jsdelivr.net/gh/MLChinoo/live2d-chino/model.json',
+			'position'=>'left',
+			'width'=>100,
+			'height'=>130,
 			'hOffset'=>0,
-			'vOffset'=>-20,
+			'vOffset'=>0,
 			'scale'=>1,
 			'mscale'=>0.5,
-			'opacityDefault'=>0.7,
-			'opacityOnHover'=>0.2,
+			'opacityDefault'=>1,
+			'opacityOnHover'=>1,
 			'mobile'=>true,
 			'activation'=>true
 			));
